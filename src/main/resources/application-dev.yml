@@ -1,0 +1,29 @@
+spring:
+      jpa:
+        hibernate:
+          ddl-auto: update
+        show-sql: true
+        properties:
+          hibernate:
+            format_sql: true
+      datasource:
+        url: jdbc:mysql://localhost:3306/book_bridge
+        username: root
+        password: 395010
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+      mail:
+        host: localhost
+        port: 1025
+        username: brijesh
+        password: brijesh
+        properties:
+          mail:
+            smtp:
+              trust: "*"
+            auth: true
+            starttls:
+              enabled: true
+            connection timeout: 5000
+            timeout: 3000
+            write timeout: 5000
